@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+    font-family: Myfont;
+    src: url("./GT Pressura Mono Regular Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: hero;
+    src: url("./SairaExtraCondensed-ExtraBold.ttf");
+}
+header{
+    height: 9vh;
+    width: 100%;
+    background-color:#E4E4E4;
+    display: flex;
+    padding: 0px 30px;
+    font-family: Myfont;
+    font-size: 14.4px;
+    font-weight:300;
+
+}
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 150px;
+
+}
+.right{
+    height:100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: first baseline;
+    gap: 550px;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.hero h1{
+    font-size:208px;
+    line-height: 160px;
+    font-family: hero;
+    text-transform: uppercase;
+}
+.cardfoll{
+    height: 300px;
+    width: 250px;
+    background-color: pink;
+    position: fixed;
+    z-index: 999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cardfoll video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-container video{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+}
