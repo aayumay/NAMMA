@@ -7,3 +7,20 @@ hero.addEventListener("mousemove", (e)=>{
     card.style.transition = "linear 0.2s"
 
 })
+
+let menu = document.querySelector(".menu")
+let click = document.querySelector("#menuclick")
+let flag = 0
+
+click.addEventListener("click", ()=>{
+    if(!flag){
+        menu.style.top = "0%"
+        menu.style.transition = "linear 1s"
+        menu.style.rotate = "10deg"
+        flag = 1
+    }else{
+        menu.style.top = "-100%"
+        menu.style.transition = "linear 0.5s"
+        flag = 0
+    }  
+})

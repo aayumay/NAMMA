@@ -8,6 +8,7 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
 @font-face {
     font-family: Myfont;
     src: url("./GT Pressura Mono Regular Regular.ttf") format("truetype");
@@ -17,17 +18,19 @@ html, body {
 }
 @font-face {
     font-family: hero;
-    src: url("./SairaExtraCondensed-ExtraBold.ttf");
+    src: url("./Anton-Regular.ttf");
 }
 header{
     height: 9vh;
     width: 100%;
-    background-color:#E4E4E4;
+    /* background-color:#E4E4E4; */
     display: flex;
     padding: 0px 30px;
     font-family: Myfont;
     font-size: 14.4px;
     font-weight:300;
+    position: fixed;
+    z-index: 9999;
 
 }
 .left{
@@ -48,7 +51,7 @@ header{
     gap: 550px;
 }
 .hero{
-    height: 100vh;
+    height: 90%;
     width: 100%;
     background: #E4E4E4;
     display: flex;
@@ -56,22 +59,29 @@ header{
     justify-content: center;
     text-align: center;
     
+
+    
 }
 .hero h1{
-    font-size:208px;
-    line-height: 160px;
+    font-size: 180px;
+    line-height: 190px;
     font-family: hero;
     text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9%;
+
 }
 .cardfoll{
     height: 300px;
     width: 250px;
-    background-color: pink;
+    /* background-color: pink; */
     position: fixed;
-    z-index: 999;
+    /* z-index: 999; */
     border-radius: 10px;
     overflow: hidden;
+
 }
+
 .cardfoll video{
     height: 100%;
     width: 100%;
@@ -86,10 +96,74 @@ header{
     justify-content: center;
     align-items: center;
     
+    
 }
 .video-container video{
-    height: 90%;
-    width: 90%;
+    z-index: 999;
+    height: 98%;
+    width: 98%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-top: 9.6%;
+}
+.description{
+    margin-top: 20%;
+}
+.description h6{
+    font-size: large;
+    font-family: Myfont;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+
+}
+.description h1{
+    font-family: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin-top: 2%;
+}
+
+.projects{
+    margin-top: 18%;
+}
+.projects h6{
+    font-size: large;
+    font-family: Myfont;
+    display: flex;
+    justify-content:flex-start;
+    font-weight: lighter;
+    margin-left: 1%;
+
+}
+.projects h1{
+    font-family: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 12%;
+}
+.menu{
+    height: 100vh;
+    width: 200%;
+    background-color: red;
+    position: fixed;
+    z-index: 999;
+    top: -100%;
+    right: 0%;
+    left: 20px;
+
+}
+#menuclick{
+    cursor: pointer;
 }
