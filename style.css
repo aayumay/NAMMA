@@ -154,16 +154,41 @@ header{
     margin-top: 12%;
 }
 .menu{
-    height: 100vh;
+    height: 100%;
     width: 200%;
-    background-color: red;
+    background-color: rgb(207, 197, 197);
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     top: -100%;
     right: 0%;
-    left: 20px;
+    left: -106px;
 
 }
 #menuclick{
     cursor: pointer;
+}
+.texts{
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    /* justify-content:flex-start; */
+    margin-left: 18px;
+    /* border: 5px solid; */
+    font-size: 150px;
+    overflow: hidden;
+    position: relative;
+    line-height: 150px;
+    position:fixed;
+    opacity: 0;
+    z-index: 99;
+    font-family: hero; 
+    text-transform: uppercase;
+    bottom: 0%;
+}
+
+.hom, .Stu{
+    margin-top: 2%;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
 }
