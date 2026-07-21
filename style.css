@@ -167,16 +167,17 @@ header{
 #menuclick{
     cursor: pointer;
 }
+
 .texts{
     height: 80vh;
     width: 90%;
     display: flex;
-    /* justify-content:flex-start; */
+    flex-direction: row;
     margin-left: 18px;
     /* border: 5px solid; */
     font-size: 150px;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     line-height: 150px;
     position:fixed;
     opacity: 0;
@@ -184,11 +185,20 @@ header{
     font-family: hero; 
     text-transform: uppercase;
     bottom: 0%;
+    align-items: end;
+    
 }
-
-.hom, .Stu{
+.text{
+    /* border: 1px solid red; */
+    /* height: 50px; */
+    margin-left: 90px;
+    text-align:justify;
+}
+.texthom, .textStu{
     margin-top: 2%;
-    width: 50%;
-    height: 100%;
-    /* border: 1px solid blueviolet; */
+    /* width: 90%; */
+    /* height: 100%; */
+    display: block;
+    
+  
 }
