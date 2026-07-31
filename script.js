@@ -52,3 +52,32 @@ click.addEventListener("click", ()=>{
 //     texts.style.opacity = 1;
 //     texts.style.transition = "all 0.5s ease-out";
 // })
+
+let detail = document.querySelector(".details")
+let playground = document.querySelector(".playground")
+let img = document.querySelector("#preview")
+
+const images = [
+    "Screenshot 2026-07-24 105710.png",
+    "Screenshot 2026-07-24 105710.png",
+    "Screenshot 2026-07-24 105710.png"
+]
+let i = 0
+let interval;
+
+detail.addEventListener("mouseenter",()=>{
+    interval = setInterval(()=>{
+        img.src = images[i]
+        i++
+
+        if(i>=images.length){
+            i=0
+        }
+    },120);
+})
+
+detail.addEventListener("mouseleave",()=>{
+    clearInterval(interval)
+    i=0
+    img.src = images[0]
+})

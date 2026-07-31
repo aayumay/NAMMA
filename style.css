@@ -164,9 +164,50 @@ header{
     left: -106px;
 
 }
+
 #menuclick{
     cursor: pointer;
+    padding: 10px 30px;
+    /* height: 50px;
+    width: 150px; */
+    background-color: transparent;
+    border-radius: 50px;
+    /* border: 1px solid; */
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    font-family: monospace;
+    border: transparent;
+    
 }
+#menuclick p{
+    margin: 0;
+    top: 0px;
+    position: relative;
+    transition: linear 0.2s;
+    
+}
+#menuclick:hover .overlay{
+    bottom: 0%;
+}
+.overlay{
+    /* height: 50px;
+    width: 150px; */
+    padding: 10px 30px;
+    /* background-color: black; */
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    z-index: -1;
+    /* border-radius: 50px; */
+    transition: linear 0.2s;
+
+}
+#menuclick:hover p{
+    color: rgb(0, 0, 0);
+    top: -50px;
+}
+
 
 .texts{
     height: 80vh;
@@ -201,4 +242,13 @@ header{
     display: block;
     
   
+}
+.description h1{
+    text-decoration: dashed;
+}
+.description img{
+    height: 300px;
+    opacity: 0;
+    object-fit: cover;
+
 }
