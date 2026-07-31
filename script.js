@@ -1,7 +1,14 @@
 // Initialize Lenis
-const lenis = new Lenis({
-  autoRaf: true,
+const lenis = new Lenis();
+
+// Sync Lenis with GSAP ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
 });
+
+gsap.ticker.lagSmoothing(0);
 
 // Initialize GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
